@@ -1,0 +1,23 @@
+html
+  head
+    title tooltip
+    script(src='build/build.js')
+    link(rel='stylesheet', href='build/build.css')
+
+    :stylus
+      body
+        padding: 52px
+
+  mixin tooltip(placement, title)
+    button(id=placement, data-placement=placement, data-title=title) On the #{placement}
+
+  +tooltip("top",   "This tooltip is on top... Booya!")
+  +tooltip("right", "But this one is on the right.")
+  +tooltip("bottom","And this one? It's on the bottom")
+  +tooltip("left",  "And this one is all the way on the left.")
+
+  :coffeescript
+    $ = require("jquery")
+    tooltip = require("tooltip")
+
+    $('button').tooltip()

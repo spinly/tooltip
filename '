@@ -1,0 +1,22 @@
+
+<html>
+	<head>
+		<title>tooltip</title>
+		<script src='build/build.js'></script>
+		<link rel='stylesheet' href='build/build.css'>
+    <style type="text/css" media="">
+    body {
+      padding: 50px;
+    }
+    </style>
+	</head>
+	<h1>Test -- tooltip</h1>
+  <script type="text/javascript" charset="utf-8">
+    var $ = require("jquery");
+    var tooltip = require("tooltip");
+
+    $('h1').tooltip({
+      'title': 'asdadasdasdas'
+    })
+  </script>
+</html>

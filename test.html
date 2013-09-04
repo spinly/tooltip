@@ -1,0 +1,15 @@
+<html><head><title>tooltip</title><script src="build/build.js"></script><link rel="stylesheet" href="build/build.css"/><style type="text/css">body {
+  padding: 52px;
+}
+</style></head><button id="top" data-placement="top" data-title="This tooltip is on top... Booya!">On the top</button><button id="right" data-placement="right" data-title="But this one is on the right.">On the right</button><button id="bottom" data-placement="bottom" data-title="And this one? It's on the bottom">On the bottom</button><button id="left" data-placement="left" data-title="And this one is all the way on the left.">On the left</button><script type="text/javascript">
+(function() {
+  var $, tooltip;
+
+  $ = require("jquery");
+
+  tooltip = require("tooltip");
+
+  $('button').tooltip();
+
+}).call(this);
+</script></html>

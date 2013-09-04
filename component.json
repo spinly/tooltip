@@ -1,0 +1,21 @@
+{
+  "name": "tooltip",
+  "repo": "spinly/tooltip",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/jquery": "*",
+    "spinly/vars": "*",
+    "spinly/animations": "*",
+    "spinly/mixins": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "index.styl"
+  ]
+}
